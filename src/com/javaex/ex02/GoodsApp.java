@@ -1,4 +1,4 @@
-package com.javeex.ex02;
+package com.javaex.ex02;
 
 public class GoodsApp {
 
@@ -9,7 +9,7 @@ public class GoodsApp {
 		Goods cup = new Goods();
 		
 		camera.setName("니콘");
-		camera.setPrice(400000);
+		camera.setPrice(-400000);
 		
 		computer.setName("그램");
 		computer.setPrice(1000000);

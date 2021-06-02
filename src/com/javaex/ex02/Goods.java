@@ -1,4 +1,4 @@
-package com.javeex.ex02;
+package com.javaex.ex02;
 
 public class Goods {
 
@@ -7,7 +7,7 @@ public class Goods {
 	private int price;
 
 	// 생성자
-	
+
 	// 메소드-겟터세터
 	// 메소드-일반
 	public void setName(String n) {
@@ -15,7 +15,12 @@ public class Goods {
 	}
 
 	public void setPrice(int p) {
-		price = p;
+		if (p < 0) {
+			this.price = 0;
+
+		} else {
+			price = p;
+		}
 	}
 
 	public String getName() {
@@ -23,12 +28,15 @@ public class Goods {
 	}
 
 	public int getPrice() {
-		return price;
+		if (this.price < 0) {
+			return 0;
+		} else {
+			return price;
+		}
 	}
 
 	public void showInfo() {
-		System.out.println("상품이름: " + name 
-						 + "\n가격: " + price);
+		System.out.println("상품이름: " + name + "\n가격: " + getPrice());
 	}
 
 }
