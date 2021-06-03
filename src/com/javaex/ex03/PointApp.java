@@ -13,7 +13,14 @@ public class PointApp {
 		System.out.println("====================");
 		Draw.draw(5,5);
 		Draw.draw(10,23);
-
+		
+		Point P05 = new Point();
+		P05.setX(50);
+		P05.setY(50);
+		P05.draw(false);
+		P05.draw(true);
+		
+		
 	}
 
 }
