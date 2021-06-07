@@ -18,6 +18,13 @@ public class GoodsApp {
 		cup.name = "머그컵";
 		cup.price = 2000;
 		System.out.println(cup.name + ", " + cup.price);
+
+		System.out.println(cup.name);
+		System.out.println(circleArea(10));
 	}
 
+	public static double circleArea(int radius) {
+		double result = radius * radius * 3.14;
+		return result;
+	}
 }
