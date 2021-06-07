@@ -16,6 +16,11 @@ public class PersonApp {
 		
 		
 		s01.showInfo();
+		
+		Person p01 = new Person();
+		p01.setName("박나연");
+		p01.setAge(24);
+		p01.showInfo();
 	}
 
 }
