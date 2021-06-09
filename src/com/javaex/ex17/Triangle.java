@@ -1,15 +1,15 @@
 package com.javaex.ex17;
 
-public class Rectangle extends Shape {
+public class Triangle extends Shape {
 
 	private int width;
 	private int height;
 
-	public Rectangle() {
+	public Triangle() {
 
 	}
 
-	public Rectangle(String fillColor, String lineColor, int width, int height) {
+	public Triangle(String fillColor, String lineColor, int width, int height) {
 		super(fillColor, lineColor);
 		this.width = width;
 		this.height = height;
@@ -31,14 +31,15 @@ public class Rectangle extends Shape {
 		this.height = height;
 	}
 
-	 @Override
+	@Override
 	public String toString() {
-		return "Rectangle [width=" + width + ", height=" + height + ", FillColor=" + fillColor
-				+ ", LineColor=" + lineColor + "]";
+		return "Triangle [width=" + width + ", height=" + height + ", fillColor=" + fillColor + ", lineColor="
+				+ lineColor + "]";
 	}
 
 	public void draw() {
-		System.out.println("[면색:"+fillColor+" 선색:"+lineColor+" 가로:"+width+" 세로:"+height+"] 사각형을 그렸습니다.");
+		System.out.println(
+				"[면색:" + getFillColor() + " 선색:" + getLineColor() + " 가로:" + width + " 세로:" + height + "] 삼각형을 그렸습니다.");
 	}
 
 }

@@ -2,8 +2,8 @@ package com.javaex.ex16;
 
 public class Shape {
 	
-	private String fillColor;
-	private String lineColor;
+	protected String fillColor;
+	protected String lineColor;
 	
 	public String getFillColor() {
 		return fillColor;
