@@ -26,6 +26,27 @@ public class ShapeApp {
 			dArray[i].draw();
 		}
 
+		System.out.println(((Rectangle)r01).area());	
+		System.out.println(((Shape)r01).area());
+		
+		for(int i = 0 ; i < dArray.length; i++) {
+			if(dArray[i] instanceof Shape) {
+				System.out.println(((Shape)r01).area());
+			} else {
+					System.out.println("도형 아님");
+					System.out.println("=================");
+				}
+			
+			}
+		
+		for(int i = 0 ; i < dArray.length; i++) {
+			if(dArray[i] instanceof DrawAble) {
+				System.out.println(((Shape)r01).area());
+			} else {
+					System.out.println("도형 아님");
+				}
+			
+			}
+			
+		}
 	}
-
-}
